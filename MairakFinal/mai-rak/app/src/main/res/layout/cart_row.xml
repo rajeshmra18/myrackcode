@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivProdImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/can"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp">
+
+
+
+
+                <TextView
+                    android:id="@+id/tvProName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PRODUCT NAME"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvProDisc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Product Description"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="2dp"/>
+
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/tvAedtxt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="AED."
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_weight=".3"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+
+
+
+
+                        <TextView
+                            android:id="@+id/tvAedVal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="5"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight=".2"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.3"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/tvQuantityTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Quantity"
+                            android:layout_weight="1.7"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+
+
+
+
+                        <TextView
+                            android:id="@+id/tvQuantityVal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight=".7"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                   android:src="@drawable/ic_delete_"
+                    android:tint="#f8fd7913"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:layout_gravity="end"
+            android:paddingTop="10sp"
+            android:paddingRight="12dp"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingTop="10sp"
+            android:src="@drawable/logo_main"/>
+
+        <TextView
+            android:id="@+id/tankT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Thank you for Booking with Mairak !"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:text="Our Delivery team will be reaching
+ you very soon with the delivery"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/thankyou"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="40dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
