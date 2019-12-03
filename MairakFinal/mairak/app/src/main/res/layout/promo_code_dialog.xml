@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvPromomTile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10dp"
+            android:fadingEdge="horizontal"
+            android:text="REDEEM YOUR PROMO CODE"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RadioGroup
+                android:id="@+id/radioSelect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbEtPromo"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbdefPromo1"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbdefPromo2"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbdefPromo3"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="11dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/etPromoCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="PROMO CODE"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llApply"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:background="@drawable/login_button_bg"
+                        android:layout_marginLeft="20dp">
+
+
+
+                        <TextView
+                            android:id="@+id/tvApplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="REDEEM"
+
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/promo1Lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="">
+
+
+
+                        <TextView
+                            android:id="@+id/tvdefPromoC1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"/>
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/promo2Lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="">
+
+
+
+
+                        <TextView
+                            android:id="@+id/tvdefPromoC2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"/>
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/promo3Lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="">
+
+
+
+                        <TextView
+                            android:id="@+id/tvdefPromoC3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"/>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/llApplyLast"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_button_bg">
+
+
+
+                <TextView
+                    android:id="@+id/tvApplayLast"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="REDEEM"
+
+
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

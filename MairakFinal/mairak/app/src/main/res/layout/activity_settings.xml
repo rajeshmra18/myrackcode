@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/atoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/dashboard_prop"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:textColorSecondary="@color/colorAccent" >
+
+        <ImageView
+            android:id="@+id/ivBackarrow"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white"/>
+        <!--   <ImageView
+               android:layout_width="120dp"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="90dp"
+               android:src="@drawable/mairak_logo"/>
+           -->
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_settings"
+            android:drawablePadding="2sp"
+            android:text="SETTINGS"
+            android:drawableStart="@drawable/ic_settings"
+            android:layout_marginStart="90dp" />
+
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:visibility="gone"
+            android:src="@drawable/logout"
+            android:layout_marginStart="50dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="#303030"
+        app:cardCornerRadius="3dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvLangTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_language"
+                android:drawablePadding="10dp"
+                android:text="CHOOSE YOUR LANGUAGE"
+                android:drawableStart="@drawable/ic_language" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="11dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvEnglish"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ENGLISH"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_weight="1"/>
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/swEnglish"
+                        android:layout_width="0dp"
+                        android:enabled="true"
+                        android:checked="true"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvArabic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ARABIC"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_weight="1"/>
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/swArabic"
+                        android:layout_width="0dp"
+                        android:enabled="true"
+                        android:checked="false"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvPromomTile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20sp"
+                android:fadingEdge="horizontal"
+                android:text="REDEEM YOUR PROMO CODE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:weightSum="2">
+
+
+
+                <EditText
+                    android:id="@+id/etPromoCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="PROMO CODE"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llApply"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button_bg"
+                    android:layout_marginLeft="30dp">
+
+
+
+                    <TextView
+                        android:id="@+id/tvApplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="REDEEM"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bookButton2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/logoutT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LOGOUT"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are You Sure You Want to Logout?"
+            android:paddingTop="30sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20sp"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="20dp">
+
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+               android:layout_marginLeft="140sp"
+                android:background="@drawable/login_button_bg"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/login_button_bg"
+                android:textColor="@color/white"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
