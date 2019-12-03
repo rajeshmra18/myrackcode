@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mairak</string>
+    <string name="is_govt_employee">Are You a Govt Employee ?</string>
+    <string name="aed">AED.</string>
+    <string name="no_notifications">No Notifications</string>
+    <string name="have_a_promo_code">Have a promo code?</string>
+    <string name="apply">Apply</string>
+    <string name="select_a_delivery_address">Select a delivery address</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</string>
+
+</resources>

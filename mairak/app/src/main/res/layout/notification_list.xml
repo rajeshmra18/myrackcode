@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/mainCard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    app:cardBackgroundColor="#202020">
+
+    <!--android:background="#202020"-->
+    <LinearLayout
+        android:id="@+id/mainLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="2sp"
+            android:layout_marginStart="2sp">
+
+            <ImageView
+                android:id="@+id/openIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email_black_24dp"
+                android:padding="14sp"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_weight="4"
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <ImageView
+                    android:id="@+id/imExpand"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/messageLay"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="end"
+                android:layout_height="65dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+
+                    android:layout_weight="4"
+                    android:id="@+id/tvMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:textColor="#e5d1d1d1"
+                    android:textSize="12sp"
+                    android:text="@string/lorem_ipsum"
+                    />
+
+                <!--android:textColor="#e52e2e2e"-->
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/deleteNot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_delete_"
+                    android:tint="@color/red"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>

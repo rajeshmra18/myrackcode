@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/home_menubar"
+            android:title="Home" />
+        <item
+            android:id="@+id/navOffer"
+            android:icon="@drawable/offers_menubar"
+            android:title="Offers" />
+        <item
+            android:id="@+id/navOrders"
+            android:icon="@drawable/orders_menubar"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/navOfferList"
+            android:icon="@drawable/offerlist"
+            android:title="My Offer Orders" />
+
+        <item
+            android:id="@+id/navPreOrderList"
+            android:icon="@drawable/offerlist"
+            android:title="My Pre Orders" />
+
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@drawable/profile_menubar"
+            android:title="My Profile" />
+
+
+        <item
+            android:id="@+id/navSettings"
+            android:icon="@drawable/ic_settings"
+            android:iconTint="#a6a6a6"
+            android:title="Settings" />
+
+
+
+        <item
+            android:id="@+id/navShare"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:iconTint="#a6a6a6"
+            android:title="Share" />
+
+
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/ic_logout"
+            android:iconTint="#a6a6a6"
+            android:title="Logout" />
+
+
+
+    </group>
+
+
+</menu>

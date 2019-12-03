@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="25">
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_gravity="end"
+                android:paddingTop="10sp"
+                android:paddingRight="12dp"/>
+
+        <ImageView
+            android:id="@+id/productImg"
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/can"/>
+
+
+        <TextView
+            android:id="@+id/prodName1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:text=" "
+            android:textSize="22dp"/>
+
+
+
+
+                    <TextView
+                        android:id="@+id/prodDiscription"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:scrollbars="vertical"
+                        android:text="Now Get Three 1 liter Gallons"
+                        android:textAlignment="center"
+                        android:paddingTop="5sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/aed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED."
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/aedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+            <RelativeLayout
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_width="130dp"
+                android:orientation="horizontal"
+                android:background="@drawable/search_bar"
+                android:layout_gravity="center"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/decrement"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="  - "
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center|center_vertical"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="40sp"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/increment"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text=" +  "
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/bookButton2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/booktext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BOOK NOW"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

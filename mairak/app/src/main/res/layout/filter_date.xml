@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/llToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_date_range"/>
+
+
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+               />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llThisMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_date_range"/>
+
+
+            <TextView
+                android:id="@+id/tvThisMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This Month"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+               />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llLastMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_date_range"/>
+
+
+            <TextView
+                android:id="@+id/tvLastMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Month"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llAllOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_date_range"/>
+
+
+            <TextView
+                android:id="@+id/tvAllOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Orders"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+               />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

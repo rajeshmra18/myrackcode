@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreen"
+    android:background="@drawable/splash_screen_bg"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/logo_main"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLangTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:text="CHOOSE YOUR LANGUAGE"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_margin="11dp"
+                    android:background="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/tvEnglish"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="ENGLISH"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_weight="1"/>
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/swEnglish"
+                            android:layout_width="0dp"
+                            android:enabled="true"
+                            android:checked="true"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/tvArabic"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="ARABIC"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_weight="1"/>
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/swArabic"
+                            android:layout_width="0dp"
+                            android:enabled="true"
+                            android:checked="false"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/loginBut"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_button_bg"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/regBut"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="REGISTER"
+            android:background="@drawable/splash_register_button_bg"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
